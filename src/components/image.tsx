@@ -1,10 +1,11 @@
-@@ -0,0 +1,41 @@
 import { motion } from "motion/react"
+
 export default function Image({picture1 = '', picture2 = '', picture3 = '', picture4 = '', title1 = '', title2 = '', title3 = '', title4 = ''}) {
     let styles1 = "object-cover rounded-2xl w-52 h-52";
     let styles2 = "object-cover rounded-2xl w-52 h-52";
     let styles3 = "object-cover rounded-2xl w-52 h-52";
     let styles4 = "object-cover rounded-2xl w-52 h-52";
+
     if (picture1 == '') {
         styles1 = "md:invisible md:w-52 md:h-52 rounded-none min-[0px]:max-md:hidden";
     }
@@ -17,6 +18,7 @@ export default function Image({picture1 = '', picture2 = '', picture3 = '', pict
     if (picture4 == '') {
         styles4 = "md:invisible md:w-52 md:h-52 rounded-none min-[0px]:max-md:hidden";
     }
+
     return (
         <>
             <div

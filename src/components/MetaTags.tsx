@@ -1,5 +1,5 @@
-@@ -0,0 +1,30 @@
 import { Helmet } from 'react-helmet-async';
+
 function MetaTags ({ title = '', description = '', image = '', name = '' }) {
     return (
         <Helmet>
@@ -26,4 +26,5 @@ function MetaTags ({ title = '', description = '', image = '', name = '' }) {
         </Helmet>
     );
 }
+
 export default MetaTags;
